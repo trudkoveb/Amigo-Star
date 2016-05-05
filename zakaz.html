@@ -61,6 +61,17 @@
                 <p class="internet-shop-title">Интернет-Магазин</p>
                 <p class="internet-shop-phone">8 (812) <span>906 04 27</span></p>
                 <a href="#" class="internet-shop-link">или закажите звонок и мы перезвоним вам</a>
+                <div class="pop-up">
+                <form action="">
+                  <p>Имя*</p>
+                  <input type="text" placeholder="Иван">
+                  <p>Телефон*</p>
+                  <input type="text" placeholder="+7 (999) 828 2831">
+                  <p>Сообщение</p>
+                  <textarea name="" id="" placeholder="Хочу велосипед"></textarea>
+                  <input type="submit" value="Отправить">
+                </form>
+              </div>
               </div>
             </div>
             <div class="col-md-3-right width-for-col-3 padding-right col-xs-12">
@@ -167,21 +178,81 @@
                   <div class="row">
                     <div class="col-md-12">
                       <div class="make-order-page__delivery-examples-top">
-                        <input type="radio" id="own-delivery" name="delivery-radio">
-                        <label for="own-delivery">Самовывоз из магазина</label>
+                        <input type="radio" id="own-delivery" name="delivery-radio" value="Open" onChange="Selected(this)">
+                        <label for="own-delivery"><span class="special-radio">Самовывоз из магазина</span></label>
                         <p>0.00 р.</p>
                       </div>
                     </div>
                     <div class="col-md-12">
                       <div class="make-order-page__delivery-examples-bottom">
-                        <input type="radio" id="delivery" name="delivery-radio">
+                        <input type="radio" id="delivery" name="delivery-radio" value="None" onChange="Selected(this)">
                         <label for="delivery">Доставка с фиксированной стоимостью</label>
                         <p>400.00 р.</p>
                       </div>
                     </div>
                   </div>
                 </div>
-              </div>
+                <div id="hidden-for-first-radio">
+                  <div class="make-order-page__payment">
+                    <p>Способ оплаты</p>
+                  </div>
+                  <div class="make-order-page__payment-type">
+                    <p>Оплата при получении</p>
+                  </div>
+                  <div class="make-order-page__payment-comment">
+                    <p>Комментарий</p>
+                  </div>
+                  <div class="make-order-page__payment-textarea">
+                    <textarea name="" id=""></textarea>
+                  </div>
+                </div>
+                <div id="hidden-for-second-radio" style="display:none;">
+                  <div class="make-order-page__address-title">
+                    <p>Адрес доставки</p>
+                  </div>
+                  <div class="make-order-page__address">
+                    <form action="">
+                      <div class="row">
+                        <div class="col-md-6">
+                          <div class="address-form__skin">
+                            <div class="address-form__input">
+                              <label for="region">Регион<span>*</span></label>
+                              <input type="text" id="region">
+                            </div>
+                            <div class="address-form__input">
+                              <label for="city">Город<span>*</span></label>
+                              <input type="text" id="city">
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="address-form__skin">
+                            <div class="address-form__input">
+                              <label for="address-textarea">Адрес<span>*</span></label>
+                              <textarea name="" id="address-textarea"></textarea>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                  <div class="make-order-page__address-payment">
+                    <p>Способ оплаты</p>
+                  </div>
+                  <div class="make-order-page__address-payment-type">
+                    <p>Оплата при получении</p>
+                  </div>
+                  <div class="make-order-page__address-payment-comment">
+                    <p>Комментарий</p>
+                  </div>
+                  <div class="make-order-page__address-payment-textarea">
+                    <textarea name="" id=""></textarea>
+                  </div>
+                </div>
+                </div>
+            </div>
+            <div class="make-order-page__order-btn">
+              <input type="submit" value="Оформить заказ">
             </div>
           </div>
         </div>
@@ -252,17 +323,17 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
-
-      <script type="text/javascript">//<![CDATA[
-  $(window).load(function(){
-  $('.link-skin, .hidden-promo').mouseover(function(){
-      $('.hidden-promo').show();
-  });
-  $('.link-skin, .hidden-promo').mouseout(function(){
-      $('.hidden-promo').hide();
-  });
-  });//]]>
-
-</script>
+      <script>
+      function Selected(a) {
+        var label = a.value;
+          if (label=="Open") {
+             document.getElementById("hidden-for-first-radio").style.display='block';
+             document.getElementById("hidden-for-second-radio").style.display='none';
+         } else {
+             document.getElementById("hidden-for-second-radio").style.display='block';
+             document.getElementById("hidden-for-first-radio").style.display='none';
+         }
+      }
+      </script>
   </body>
 </html>

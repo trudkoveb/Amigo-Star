@@ -179,7 +179,6 @@ input, select, textarea{
 :-moz-placeholder           {color:#6dcff6;}  /* Firefox 18- */
 :-ms-input-placeholder      {color:#6dcff6;}
 
-
 /* header */
 
 .header__nav{
@@ -320,6 +319,7 @@ header .col-md-3-right{
 .header__internet-shop{
     text-align: center;
     line-height: 18px;
+    position: relative;
 }
 
 .header__internet-shop > .internet-shop-title{
@@ -545,6 +545,7 @@ padding-right: 0;}*/
     display: block;
     padding-top: 3px;
     padding-bottom: 5px;
+    margin-right: -3px;
 }
 
 .header__inner-nav ul > li:first-child > a{ padding-left: 0;}
@@ -622,7 +623,7 @@ padding-right: 0;}*/
     display: block;
     padding-top: 3px;
     padding-bottom: 3px;
-    padding-left: 45px;
+    padding-left: 72px;
     padding-right: 7px;
 }
 
@@ -631,11 +632,6 @@ padding-right: 0;}*/
     border-left: 2px solid  #fff;
     background-color: #ff0000;
 }
-
-.inner-nav-basket:hover{
-    background-color: #e80202;
-}
-
 
 /* content */
 
@@ -2141,13 +2137,13 @@ footer .title-link{ font-weight: bold;}
     margin-top: 30px;
 }
 
-.make-order-page__delivery-examples, .make-order-page__delivery, .make-order-page__title, .make-order-page__table, .make-order-page__registration, .make-order-page__registration-form{
+.make-order-page__address-payment-comment, .make-order-page__address-payment-type, .make-order-page__address-payment, .make-order-page__address, .make-order-page__address-title, .make-order-page__payment-comment, .make-order-page__payment-type ,.make-order-page__payment, .make-order-page__delivery-examples, .make-order-page__delivery, .make-order-page__title, .make-order-page__table, .make-order-page__registration, .make-order-page__registration-form{
     -webkit-box-shadow: 0 9px 3px -2px #eaeaea;
     box-shadow: 0 9px 3px -2px #eaeaea;
     border: 1px solid  #6dcff6;
 }
 
-.make-order-page__title > p, .make-order-page__delivery > p{
+.make-order-page__address-payment-comment > p, .make-order-page__address-payment > p, .make-order-page__address-title > p, .make-order-page__payment-comment > p, .make-order-page__title > p, .make-order-page__delivery > p, .make-order-page__payment > p{
     text-transform: uppercase;
     font-weight: bold;
     font-size: 14px;
@@ -2214,8 +2210,8 @@ footer .title-link{ font-weight: bold;}
     font-size: 14px;
     color: #000;
     text-align: right;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 17px;
+    padding-bottom: 18px;
     margin-bottom: 0;
     border-bottom: 1px solid  #6dcff6;
 }
@@ -2338,4 +2334,276 @@ footer .title-link{ font-weight: bold;}
     display: inline-block;
 }
 
+.make-order-page__delivery-examples-bottom > p{
+    padding-left: 50px;
+}
+
+.make-order-page__delivery-examples-top > p{
+    padding-left: 158px;
+}
+
 .make-order-page__delivery-examples-bottom > p:last-child{margin-bottom: 0;}
+
+.make-order-page__payment{
+    margin-top: 30px;
+}
+
+.make-order-page__payment-type{
+    margin-top: 10px;
+}
+
+.make-order-page__payment-type > p, .make-order-page__address-payment-type > p{
+    font-size: 14px;
+    color: #000;
+    padding: 8px;
+    padding-left: 20px;
+    margin-bottom: 0;
+}
+
+.make-order-page__payment-comment{
+    margin-top: 45px;
+}
+
+.make-order-page__payment-textarea{
+    margin-top: 20px;
+    height: 168px;
+}
+
+.make-order-page__payment-textarea > textarea{
+    border: 1px solid  #6dcff6;
+    width: 100%;
+    min-width: 100%;
+    max-width: 100%;
+    min-height: 168px;
+    max-height: 168px;
+    resize: none;
+    -webkit-box-shadow:inset 0 0 10px 4px #eaeaea;
+    box-shadow:inset 0 0 10px 4px #eaeaea;
+}
+
+.make-order-page__address-title{
+    margin-top: 20px;
+}
+
+.make-order-page__address{
+    margin-top: 10px;
+    position: relative;
+}
+
+.make-order-page__address > form{
+    padding: 10px 14px;
+}
+
+
+.address-form__input{
+    text-align: right;
+    clear: both;
+    line-height:25px;
+}
+
+.address-form__input > input, .address-form__input > textarea{
+    margin-bottom: 5px;
+    border: 1px solid  #6dcff6;
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 55%;
+}
+
+.address-form__input > textarea{
+    margin-bottom: 0;
+    width: 60%;
+    max-width: 60%;
+    min-width: 60%;
+    height: 63px;
+    min-height: 63px;
+    max-height: 63px;
+    resize: none;
+}
+
+.address-form__input:last-child > input{margin-bottom: 0;}
+.address-form__input:last-child > label{margin-bottom: 0;}
+
+.address-form__input > label{
+    float: left;
+}
+
+.address-form__input > label > span{
+    color: #e04646;
+}
+
+.make-order-page__address-payment{
+    margin-top: 10px;
+}
+
+.make-order-page__address-payment-type{
+    margin-top: 20px;
+}
+
+.make-order-page__address-payment-comment{
+    margin-top: 10px;
+}
+
+.make-order-page__address-payment-textarea{
+    margin-top: 1px;
+    height: 48px;
+}
+
+.make-order-page__address-payment-textarea > textarea{
+    width: 100%;
+    min-width: 100%;
+    max-width: 100%;
+    resize: none;
+    height: 48px;
+    min-height: 48px;
+    max-height: 48px;
+    -webkit-box-shadow: inset 0 0 10px 4px #eaeaea;
+    box-shadow: inset 0 0 10px 4px #eaeaea;
+    border: 1px solid #6dcff6;
+}
+
+.make-order-page__order-btn{
+    text-align: right;
+}
+
+.make-order-page__order-btn > input[type=submit]{
+    border: none;
+    background-color: #6dcff6;
+    color: #fff;
+    font-weight: 600;
+    font-size: 18px;
+    text-align: center;
+    padding: 15px;
+    margin-right: 16px;
+    margin-top: 20px;
+}
+
+/* Выпадающая форма */
+
+.pop-up{
+    text-align: center;
+    position: absolute;
+    top: 75px;
+    left: -20px;
+    width: 210px;
+    z-index: 99999;
+}
+
+.pop-up > form{
+    width: 100%;
+    background-color: #6dcff6;
+    padding-top: 14px;
+    padding-bottom: 14px;
+}
+
+.pop-up > form > p{
+    font-size: 14px;
+    color: #000;
+    margin-bottom: 0;
+    text-align: left;
+    padding-left: 13%;
+}
+
+.pop-up > form > input{
+    width: 80%;
+    margin-bottom: 10px;
+    border: 1px solid  #46a7ce;
+    padding: 5px;
+}
+
+.pop-up > form > textarea{
+    width: 80%;
+    max-width: 80%;
+    min-width: 80%;
+    resize: none;
+    height: 100px;
+    min-height: 100px;
+    max-height: 100px;
+    margin-bottom: 10px;
+    border: 1px solid  #46a7ce;
+    padding: 5px;
+}
+
+.pop-up> form > input::-webkit-input-placeholder {color:#000;}
+.pop-up> form > input::-moz-placeholder          {color:#000;}  /* Firefox 19+ */
+.pop-up> form > input:-moz-placeholder           {color:#000;}  /* Firefox 18- */
+.pop-up> form > input:-ms-input-placeholder      {color:#000;}
+.pop-up> form > textarea::-webkit-input-placeholder {color:#000;}
+.pop-up> form > textarea::-moz-placeholder          {color:#000;}  /* Firefox 19+ */
+.pop-up> form > textarea:-moz-placeholder           {color:#000;}  /* Firefox 18- */
+.pop-up> form > textarea:-ms-input-placeholder      {color:#000;}
+
+
+.pop-up > form > input[type=submit]{
+    width: 120px;
+    background-color: #f00;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 16px;
+    border: none;
+}
+
+/* Каталог */
+
+.catalog-page__filter > div > ul > li{
+    display: block;
+}
+
+/* inner-header-nav */
+
+.header__inner-nav > div > ul > li{
+    position: relative;
+}
+
+.hidden-menu{
+    display: none;
+    position: absolute;
+    top: 25px;
+    left: 0;
+    z-index: 99999;
+    background-color: #6dcff6;
+}
+
+.hidden-menu > ul{
+    display: table-cell;
+    padding-top: 20px;
+    padding-right: 30px;
+    padding-bottom: 20px;
+}
+
+.hidden-menu > ul > li{
+    display: block;
+    border: none;
+    padding: 0;
+    margin: 0;
+    padding-left: 20px;
+    width: 155px;
+}
+
+.hidden-menu > ul > li:first-child{
+    padding-left: 10px;
+}
+
+.hidden-menu > ul > li:first-child > a{
+    font-weight: 600;
+    font-size: 14px;
+    padding: 0;
+}
+
+.hidden-menu > ul > li > a{
+    font-weight: normal;
+    font-size: 12px;
+}
+
+.header__inner-nav > div > ul > li:hover .hidden-menu{
+    display: table;
+}
+
+.header__inner-nav > div > ul > li:hover a{
+    background-color: #6dcff6;
+}
+
+.header__inner-nav > div > ul > li:last-child:hover a{
+    background-color: #e80202;
+}
+
