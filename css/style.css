@@ -2613,6 +2613,7 @@ footer .title-link{ font-weight: bold;}
     text-transform: uppercase;
     padding-left: 5px;
     font-weight: normal;
+    padding-left: 30px;
 }
 
 .catalog-page__filter-btn{
