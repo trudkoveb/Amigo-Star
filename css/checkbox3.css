@@ -146,8 +146,8 @@
   border-color: #4183d7; }
 
 .checkbox3.checkbox-success input:checked + label::before {
-  background-color: #36b846;
-  border-color: #36b846; }
+  background-color: #6dcff6;
+  border-color: #6dcff6; }
 
 .checkbox3.checkbox-warning input:checked + label::before {
   background-color: #ff9c00;
@@ -173,10 +173,10 @@
 
 .checkbox3.checkbox-success.checkbox-light input:checked + label::before {
   background-color: transparent;
-  border-color: #36b846; }
+  border-color: #6dcff6; }
 
 .checkbox3.checkbox-success.checkbox-light input:checked + label::after {
-  color: #36b846; }
+  color: #6dcff6; }
 
 .checkbox3.checkbox-warning.checkbox-light input:checked + label::before {
   background-color: transparent;
