@@ -122,7 +122,23 @@
                   <div class="row">
                     <div class="col-md-8 col-xs-6">
                       <p class="product-card-price-block__shop">забрать в магазине</p>
+                      <div class="hidden-info-delivery-shop">
+                        <p>Забрать можно по адресу Апраксин двор 29</p>
+                        <div class="hidden-info-delivery-for-triangle">
+                          <div class="triangle-up"></div>
+                          <div class="sub-triangle-up"></div>
+                        </div>
+                      </div>
                       <p class="product-card-price-block__house">доставить на дом</p>
+                      <div class="hidden-info-delivery-house">
+                        <p>Служба доставки работает 7 дней в неделю.</p>
+                        <p>Фиксированная стоимость доставки по городу 400 руб.</p>
+                        <p>от 9000 руб доставка по Санкт-Петербургу БЕСПЛАТНО!</p>
+                        <div class="hidden-info-delivery-for-triangle">
+                          <div class="triangle-up"></div>
+                          <div class="sub-triangle-up"></div>
+                        </div>
+                      </div>
                     </div>
                     <div class="col-md-4 col-xs-6">
                       <p class="product-card-price-block__info">Резерв <br> на 3 дня</p>
@@ -153,7 +169,7 @@
                       <div class="product-card-price-block__compare">
                         <input id="compare-checkbox" type="checkbox">
                         <span>сравнить</span>
-                        <label for="compare-checkbox"><p href="#">Сравнить</p></label>
+                        <label for="compare-checkbox">Сравнить</label>
                       </div>
                     </div>
                     <div class="col-md-6 col-xs-6">
@@ -164,18 +180,79 @@
                             <option value="">Желтый</option>
                             <option value="">Красный</option>
                           </select>
-                          <span class="color-input-dpwn"></span>
+                          <span class="color-input-down"></span>
                       </div>
                     </div>
                   </div>
                 </div>
                 <div class="product-card-price-block__order">
                   <div class="row">
-                    <div class="col-md-6 col-xs-6">
-                      <a class="product-card__order-link" href="#">Быстрый заказ</a>
+                      <div class="col-md-6 col-xs-6">
+                        <a class="product-card__order-link" href="#">Быстрый заказ</a>
+                        <div class="fast-order-form">
+                        <p class="fast-order-form-product-name">Forward DAKOTA 26 1.0</p>
+                          <div class="row">
+                            <div class="col-md-6 fast-order-for-product-info">
+                              <span>Размер</span>
+                              <select name="" id="">
+                                <option value="">14</option>
+                                <option value="">15</option>
+                                <option value="">16</option>
+                                <option value="">17</option>
+                              </select>
+                              <span>Цвет</span>
+                              <select name="" id="">
+                                <option value="">Синий</option>
+                                <option value="">Белый</option>
+                                <option value="">Синий</option>
+                                <option value="">Белый</option>
+                              </select>
+                              <img src="img/box-page/img-box-page-bicycle.jpg" alt="Товар">
+                            </div>
+                            <div class="col-md-6">
+                              <form action="">
+                                <div class="fast-order-for-input-skin">
+                                   <label for="fast-order-name">Имя<span>*</span></label>
+                                   <input type="text" id="fast-order-name">
+                                </div>
+                                <div class="fast-order-for-input-skin">
+                                   <label for="fast-order-tel">Телефон<span>*</span></label>
+                                   <input type="text" id="fast-order-tel">
+                                </div>
+                                <div class="fast-order-for-input-skin">
+                                   <label for="fast-order-mail">E-mail</label>
+                                   <input type="text" id="fast-order-mail">
+                                </div>
+                                <div class="fast-order-for-input-skin">
+                                   <label for="fast-order-delivary">Способ доставки</label>
+                                    <div class="select-skin">
+                                     <select name="" id="fast-order-delivary">
+                                       <option value="">самовывоз</option>
+                                       <option value="">курьер</option>
+                                     </select>
+                                   </div>
+                                </div>
+                              </form>
+                            </div>
+                        </div>
+                        <button>Купить</button>
+                        <div class="fast-order-form-for-triangle">
+                          <div class="triangle-topright"></div>
+                        </div>
+                      </div>
                     </div>
                     <div class="col-md-6 col-xs-6">
                       <a class="product-card__basket-link" href="#">В корзину</a>
+                      <div class="hidden-backet-form">
+                        <p>ВАША ПОКУПКА В КОРЗИНЕ!</p>
+                        <button class="hidden-backet-form-order-btn">Оформить заказ</button>
+                        <button class="hidden-backet-form-continue-btn">продолжить покупки</button>
+                        <div class="hidden-basket-form-for-triangle">
+
+                          <div class="triangle"></div>
+                          <div class="sub-triangle"></div>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -389,6 +466,7 @@
             </div>
           </div>
         </div>
+  </div>
   </div>
   <footer class="footer">
     <div class="container">

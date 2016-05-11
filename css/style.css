@@ -3105,14 +3105,6 @@ footer .title-link{ font-weight: bold;}
 .catalog-page__content > .catalog-page__content-title > ul:nth-child(3) > li > .catalog-inner-nav-skin > a > .middle{width: 71%;}
 
 
-
-
-
-
-
-
-
-
 /* inner-header-nav */
 
 .header__inner-nav > div > ul > li{
@@ -3171,3 +3163,322 @@ footer .title-link{ font-weight: bold;}
     background-color: #e80202;
 }
 
+
+
+/* Форма быстрого заказа */
+
+.fast-order-form{
+    position: absolute;
+    top: -425px;
+    left: -610px;
+    z-index: 99999;
+    width: 945px;
+    background-color: #fff;
+    padding-bottom: 60px;
+    display: none;
+}
+
+.fast-order-for-input-skin{
+    clear:both;
+    text-align:right;
+}
+
+.fast-order-for-input-skin > label{
+    float:left;
+    padding-right:10px;
+    font-size: 18px;
+    color: #000;
+    font-weight: normal;
+}
+
+.fast-order-for-input-skin > input{
+    padding: 1px 5px;
+    margin-bottom: 10px;
+}
+
+.fast-order-for-input-skin > .select-skin{
+    border: 1px solid #6dcff6;
+    overflow: hidden;
+    height: 25px;
+    background: url(../img/icon-select-form-fast-order.png) no-repeat 90% #dbf3fd;
+    width: 131px;
+}
+
+.fast-order-for-input-skin > .select-skin > select{
+    background: transparent;
+    height: 25px;
+    border: 0;
+    width: 142px;
+    padding-bottom: 2px;
+}
+
+.fast-order-for-input-skin > label > span{
+    color: #e04646;
+}
+
+.fast-order-form form{
+    float: left;
+    padding-top: 20px;
+}
+
+.triangle-topright{
+    width: 0;
+    height: 0;
+    border-top: 75px solid #fff;
+    border-left: 55px solid transparent;
+    position: absolute;
+    bottom: -134px;
+    right: 300px;
+}
+
+.fast-order-form-for-triangle{
+    position: relative;
+}
+
+.fast-order-form-product-name{
+    font-weight: 600;
+    font-size: 34px;
+    text-align: center;
+    color: #000;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 0;
+}
+
+.fast-order-for-product-info{
+    padding-left: 70px;
+    text-align: center;
+}
+
+.fast-order-for-product-info > span, .fast-order-for-product-info > select{
+    display: inline-block;
+}
+
+.fast-order-for-product-info > img{
+    width: auto;
+}
+
+.fast-order-for-product-info > span{
+    font-size: 18px;
+    color: #000;
+    padding-right: 20px;
+}
+
+.fast-order-for-product-info > select{
+    border: 1px solid  #6dcff6;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    padding: 0 10px;
+}
+
+.fast-order-for-product-info > select:nth-child(2){ margin-right: 50px; }
+
+.fast-order-form > button{
+    position: absolute;
+    bottom: 20px;
+    right: 120px;
+    background-color: #6dcff6;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 24px;
+    border: none;
+    text-align: center;
+    padding: 10px 40px;
+    border: 2px solid transparent;
+}
+
+.fast-order-form > button:hover{
+    background-color: #fff;
+    border: 2px solid  #6dcff6;
+    color: #6dcff6;
+}
+
+
+/* Форма при добавлении товара в корзину */
+
+.hidden-backet-form{
+    background-color: #fff;
+    width: 500px;
+    border: 2px solid  #6dcff6;
+    position: absolute;
+    top: -290px;
+    right: 90px;
+    z-index: 99999;
+    position: absolute;
+    display: none;
+}
+
+.hidden-backet-form > p{
+    text-transform: uppercase;
+    color: #6dcff6;
+    font-size: 18px;
+    font-weight: bold;
+    padding-top: 64px;
+    padding-left: 200px;
+    position: relative;
+}
+
+.hidden-backet-form > p:before{
+    content: "";
+    display: block;
+    width: 93px;
+    height: 93px;
+    background-image: url(../img/icon-hidden-basket.png);
+    position: absolute;
+    top: 25px;
+    left: 80px;
+}
+
+.hidden-backet-form > button{
+    border: none;
+    display: inline-block;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 14px;
+    width: 195px;
+}
+
+.hidden-backet-form > .hidden-backet-form-order-btn{
+    border: 5px solid  #6dcff6;
+    background-color: transparent;
+    color: #000;
+    padding-top: 12px;
+    margin-top: 64px;
+    padding-bottom: 12px;
+    margin-left: 38px;
+    margin-right: 30px;
+    margin-bottom: 18px;
+}
+
+.hidden-backet-form > .hidden-backet-form-order-btn:hover{
+    border-color: #000;
+}
+
+.hidden-backet-form > .hidden-backet-form-continue-btn{
+    background-color: #6dcff6;
+    color: #fff;
+    padding-top: 17px;
+    padding-bottom: 17px;
+}
+
+.hidden-backet-form > .hidden-backet-form-continue-btn:hover{
+    background-color: transparent;
+    color: #6dcff6;
+}
+
+.hidden-basket-form-for-triangle{
+    position: relative;
+}
+
+.hidden-basket-form-for-triangle > .triangle{
+    position: absolute;
+    top: 0;
+    left: 380px;
+    width: 0;
+    height: 0;
+    border-top: 75px solid #6dcff6;
+    border-left: 55px solid transparent;
+}
+
+.hidden-basket-form-for-triangle > .sub-triangle{
+    position: absolute;
+    top: 0;
+    left: 383px;
+    width: 0;
+    height: 0;
+    border-top: 67px solid #fff;
+    border-left: 50px solid transparent;
+}
+
+
+/* Инфа при наведении на "доставить на дом" на Каточке товара*/
+
+
+.hidden-info-delivery-shop{
+    border: 2px solid  #6dcff6;
+    width: 510px;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    z-index: 99999;
+    background-color: #fff;
+    position: absolute;
+    top: 105px;
+    left: -370px;
+    display: none;
+    text-align: center;
+}
+
+.hidden-info-delivery-house/*, .hidden-info-delivery-shop*/{
+    border: 2px solid  #6dcff6;
+    width: 510px;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    z-index: 99999;
+    background-color: #fff;
+    position: absolute;
+    top: 155px;
+    left: -370px;
+    display: none;
+}
+
+.product-card-price-block__house:hover .hidden-info-delivery-house{
+    display: block;
+}
+
+.product-card-price-block__shop:hover .hidden-info-delivery-shop{
+    display: block;
+}
+
+.hidden-info-delivery-house > p, .hidden-info-delivery-shop > p{
+    font-weight: bold;
+    font-size: 14px;
+    color: #6dcff6;
+    padding: 0 45px;
+    margin-bottom: 0;
+}
+
+.hidden-info-delivery-for-triangle{
+    position: relative;
+}
+
+.hidden-info-delivery-for-triangle > .triangle-up{
+    position: absolute;
+    top: -149px;
+    left: 380px;
+    width: 0;
+    height: 0;
+    border-bottom: 75px solid #6dcff6;
+    border-left: 55px solid transparent;
+}
+
+.hidden-info-delivery-for-triangle > .sub-triangle-up{
+    position: absolute;
+    top: -139px;
+    left: 382px;
+    width: 0;
+    height: 0;
+    border-bottom: 67px solid #fff;
+    border-left: 50px solid transparent;
+}
+
+.hidden-info-delivery-shop >.hidden-info-delivery-for-triangle > .triangle-up{
+    position: absolute;
+    top: -110px;
+    left: 380px;
+    width: 0;
+    height: 0;
+    border-bottom: 75px solid #6dcff6;
+    border-left: 55px solid transparent;
+}
+
+.hidden-info-delivery-shop >.hidden-info-delivery-for-triangle > .sub-triangle-up{
+    position: absolute;
+    top: -100px;
+    left: 382px;
+    width: 0;
+    height: 0;
+    border-bottom: 67px solid #fff;
+    border-left: 50px solid transparent;
+}
