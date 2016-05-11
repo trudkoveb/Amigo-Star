@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Amigo</title>
+    <title>Сравнение</title>
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,600italic,700,800&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Roboto:900italic' rel='stylesheet' type='text/css'>
     <!-- Bootstrap -->
@@ -63,6 +63,17 @@
                 <p class="internet-shop-title">Интернет-Магазин</p>
                 <p class="internet-shop-phone">8 (812) <span>906 04 27</span></p>
                 <a href="#" class="internet-shop-link">или закажите звонок и мы перезвоним вам</a>
+                <div class="pop-up">
+                <form action="">
+                  <p>Имя*</p>
+                  <input type="text" placeholder="Иван">
+                  <p>Телефон*</p>
+                  <input type="text" placeholder="+7 (999) 828 2831">
+                  <p>Сообщение</p>
+                  <textarea name="" id="" placeholder="Хочу велосипед"></textarea>
+                  <input type="submit" value="Отправить">
+                </form>
+              </div>
               </div>
             </div>
             <div class="col-md-3-right width-for-col-3 padding-right col-xs-12">
@@ -98,7 +109,9 @@
         </div>
       </header>
         <div class="container">
-          <div class="catalog-page">
+        <div class="catalog-list">
+            <div class="container">
+             <div class="catalog-page">
             <div class="row">
               <div class="col-md-3">
                 <div class="catalog-page__filter">
@@ -188,255 +201,87 @@
             </div>
             <div class="col-md-9">
               <div class="catalog-page__content">
-                <div class="catalog-page__content-title">тут вроде как хлебные крошки</div>
-              <div class="catalog-page__content-catalog">
-                <div class="catalog-page__control">
-                  <div class="catalog-page__control-row">тут кнопки расположения товара</div>
-                  <button>сравнить</button>
-                  <div class="catalog-page__control-filter">
-                    <span>сортировать по:</span>
-                    <div class="catalog-page__control-filter-select">
-                      <select name="" id="">
-                        <option value="">По умолчанию</option>
-                        <option value="">Название А-Я</option>
-                        <option value="">Название Я-А</option>
-                        <option value="">1</option>
-                        <option value="">2</option>
-                        <option value="">3</option>
-                        <option value="">4</option>
-                      </select>
-                    </div>
-                  </div>
-                </div>
-              <div class="catalog">
-                <div class="catalog-page__content-catalog-product">
-                  тут звездочки
-                  <img src="img/catalog/img-catalog-product-example.jpg" alt="Велосипед">
-                  <p class="catalog-page__content-catalog-product-title">Название</p>
-                  <span class="catalog-page__content-catalog-product-price">12.990 р.</span>
-                  <div class="catalog-page__content-catalog-product-btn">
-                    <button class="catalog-product-buy-btn">купить</button><br>
-                    <button class="catalog-product-compare-btn">сравнить</button>
-                  </div>
-                </div>
-                <div class="catalog-page__content-catalog-product">
-                  тут звездочки
-                  <img src="img/catalog/img-catalog-product-example.jpg" alt="Велосипед">
-                  <p class="catalog-page__content-catalog-product-title">Название</p>
-                  <span class="catalog-page__content-catalog-product-price">12.990 р.</span>
-                  <div class="catalog-page__content-catalog-product-btn">
-                    <button class="catalog-product-buy-btn">купить</button><br>
-                    <button class="catalog-product-compare-btn">сравнить</button>
-                  </div>
-                </div>
-                <div class="catalog-page__content-catalog-product">
-                  тут звездочки
-                  <img src="img/catalog/img-catalog-product-example.jpg" alt="Велосипед">
-                  <p class="catalog-page__content-catalog-product-title">Название</p>
-                  <span class="catalog-page__content-catalog-product-price">12.990 р.</span>
-                  <div class="catalog-page__content-catalog-product-btn">
-                    <button class="catalog-product-buy-btn">купить</button><br>
-                    <button class="catalog-product-compare-btn">сравнить</button>
-                  </div>
-                </div>
-                <div class="catalog-page__content-catalog-product">
-                  тут звездочки
-                  <img src="img/catalog/img-catalog-product-example.jpg" alt="Велосипед">
-                  <p class="catalog-page__content-catalog-product-title">Название</p>
-                  <span class="catalog-page__content-catalog-product-price">12.990 р.</span>
-                  <div class="catalog-page__content-catalog-product-btn">
-                    <button class="catalog-product-buy-btn">купить</button><br>
-                    <button class="catalog-product-compare-btn">сравнить</button>
-                  </div>
-                </div>
-                <div class="catalog-page__content-catalog-product">
-                  тут звездочки
-                  <img src="img/catalog/img-catalog-product-example.jpg" alt="Велосипед">
-                  <p class="catalog-page__content-catalog-product-title">Название</p>
-                  <span class="catalog-page__content-catalog-product-price">12.990 р.</span>
-                  <div class="catalog-page__content-catalog-product-btn">
-                    <button class="catalog-product-buy-btn">купить</button><br>
-                    <button class="catalog-product-compare-btn">сравнить</button>
-                  </div>
-                </div>
-                <div class="catalog-page__content-catalog-product">
-                  тут звездочки
-                  <img src="img/catalog/img-catalog-product-example.jpg" alt="Велосипед">
-                  <p class="catalog-page__content-catalog-product-title">Название</p>
-                  <span class="catalog-page__content-catalog-product-price">12.990 р.</span>
-                  <div class="catalog-page__content-catalog-product-btn">
-                    <button class="catalog-product-buy-btn">купить</button><br>
-                    <button class="catalog-product-compare-btn">сравнить</button>
-                  </div>
-                </div>
-                <div class="catalog-page__content-catalog-product">
-                  тут звездочки
-                  <img src="img/catalog/img-catalog-product-example.jpg" alt="Велосипед">
-                  <p class="catalog-page__content-catalog-product-title">Название</p>
-                  <span class="catalog-page__content-catalog-product-price">12.990 р.</span>
-                  <div class="catalog-page__content-catalog-product-btn">
-                    <button class="catalog-product-buy-btn">купить</button><br>
-                    <button class="catalog-product-compare-btn">сравнить</button>
-                  </div>
-                </div>
-                <div class="catalog-page__content-catalog-product">
-                  тут звездочки
-                  <img src="img/catalog/img-catalog-product-example.jpg" alt="Велосипед">
-                  <p class="catalog-page__content-catalog-product-title">Название</p>
-                  <span class="catalog-page__content-catalog-product-price">12.990 р.</span>
-                  <div class="catalog-page__content-catalog-product-btn">
-                    <button class="catalog-product-buy-btn">купить</button><br>
-                    <button class="catalog-product-compare-btn">сравнить</button>
-                  </div>
-                </div>
-                <div class="catalog-page__content-catalog-product">
-                  тут звездочки
-                  <img src="img/catalog/img-catalog-product-example.jpg" alt="Велосипед">
-                  <p class="catalog-page__content-catalog-product-title">Название</p>
-                  <span class="catalog-page__content-catalog-product-price">12.990 р.</span>
-                  <div class="catalog-page__content-catalog-product-btn">
-                    <button class="catalog-product-buy-btn">купить</button><br>
-                    <button class="catalog-product-compare-btn">сравнить</button>
-                  </div>
-                </div>
-                <div class="catalog-page__content-catalog-product">
-                  тут звездочки
-                  <img src="img/catalog/img-catalog-product-example.jpg" alt="Велосипед">
-                  <p class="catalog-page__content-catalog-product-title">Название</p>
-                  <span class="catalog-page__content-catalog-product-price">12.990 р.</span>
-                  <div class="catalog-page__content-catalog-product-btn">
-                    <button class="catalog-product-buy-btn">купить</button><br>
-                    <button class="catalog-product-compare-btn">сравнить</button>
-                  </div>
-                </div>
-                <div class="catalog-page__content-catalog-product">
-                  тут звездочки
-                  <img src="img/catalog/img-catalog-product-example.jpg" alt="Велосипед">
-                  <p class="catalog-page__content-catalog-product-title">Название</p>
-                  <span class="catalog-page__content-catalog-product-price">12.990 р.</span>
-                  <div class="catalog-page__content-catalog-product-btn">
-                    <button class="catalog-product-buy-btn">купить</button><br>
-                    <button class="catalog-product-compare-btn">сравнить</button>
-                  </div>
-                </div>
-                <div class="catalog-page__content-catalog-product">
-                  тут звездочки
-                  <img src="img/catalog/img-catalog-product-example.jpg" alt="Велосипед">
-                  <p class="catalog-page__content-catalog-product-title">Название</p>
-                  <span class="catalog-page__content-catalog-product-price">12.990 р.</span>
-                  <div class="catalog-page__content-catalog-product-btn">
-                    <button class="catalog-product-buy-btn">купить</button><br>
-                    <button class="catalog-product-compare-btn">сравнить</button>
-                  </div>
-                </div>
-                <div class="catalog-page__content-catalog-product">
-                  тут звездочки
-                  <img src="img/catalog/img-catalog-product-example.jpg" alt="Велосипед">
-                  <p class="catalog-page__content-catalog-product-title">Название</p>
-                  <span class="catalog-page__content-catalog-product-price">12.990 р.</span>
-                  <div class="catalog-page__content-catalog-product-btn">
-                    <button class="catalog-product-buy-btn">купить</button><br>
-                    <button class="catalog-product-compare-btn">сравнить</button>
-                  </div>
-                </div>
-                <div class="catalog-page__content-catalog-product">
-                  тут звездочки
-                  <img src="img/catalog/img-catalog-product-example.jpg" alt="Велосипед">
-                  <p class="catalog-page__content-catalog-product-title">Название</p>
-                  <span class="catalog-page__content-catalog-product-price">12.990 р.</span>
-                  <div class="catalog-page__content-catalog-product-btn">
-                    <button class="catalog-product-buy-btn">купить</button><br>
-                    <button class="catalog-product-compare-btn">сравнить</button>
-                  </div>
-                </div>
-                </div>
-                <div class="catalog-page__content-catalog-pagination">
+                <div class="catalog-page__content-title">
                   <ul>
-                    <li><a href="#">1</a></li>
-                    <li><a href="#">2</a></li>
-                    <li><a href="#">3</a></li>
-                    <li><a href="#">4</a></li>
-                    <li><a href="#">5</a></li>
-                    <li><a href="#">6</a></li>
-                    <li><a href="#">7</a></li>
-                    <li><a href="#">8</a></li>
-                    <li><a href="#">9</a></li>
-                    <li><a href="#">10</a></li>
-                    <li><a class="fa fa-angle-right" href="#"></a></li>
-                    <li><a class="fa fa-angle-double-right" href="#"></a></li>
+                    <li>
+                      <div class="catalog-inner-nav-skin">
+                        <a href="#"><div class="middle">Горные велосипеды</div><div class="right-side"></div></a>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="catalog-inner-nav-skin">
+                        <a href="#"><div class="middle">Женские велосипеды</div><div class="right-side"></div></a>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="catalog-inner-nav-skin">
+                        <a href="#"><div class="middle">Городские велосипеды</div><div class="right-side"></div></a>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="catalog-inner-nav-skin">
+                        <a href="#"><div class="middle">Подростковые велосипеды</div><div class="right-side"></div></a>
+                      </div>
+                    </li>
                   </ul>
-                </div>
-                <div class="catalog-page__content-catalog-result">
-                  <p>Показано 15 из 1000 (всего 40 страниц)</p>
-                </div>
-              </div>
-              </div>
-              <div class="catalog-page__content-carousel">
-              <div class="carousel-link-best-products">
-                    <span>лучшие аксессуары:</span>
-                    <a href="#">банданы и бафы</a>
-                    <a href="#">велокомпьютеры</a>
-                    <a href="#">велосипедные зеркала</a>
-                    <a href="#">велосипедные насосы</a>
-                  </div>
-                    <div class="carousel-skin">
-                    <div id="owl" class="owl-carousel">
-                      <div class="owl-item">
-                        <img src="img/karta-tovara/inner-carousel/slide-a.png" class="gallery-image" alt="Фото">
-                        <p class="gallery-inner-title">Балаклава флисовая милитари</p>
-                        <p class="gallery-inner-price">7.654 р</p>
+                  <ul>
+                    <li>
+                      <div class="catalog-inner-nav-skin">
+                        <a href="#"><div class="left-side"></div><div class="middle">Детские велосипеды</div><div class="right-side"></div></a>
                       </div>
-                      <div class="owl-item">
-                        <img src="img/karta-tovara/inner-carousel/slide-a.png" class="gallery-image" alt="Фото">
-                        <p class="gallery-inner-title">Балаклава флисовая милитари</p>
-                        <p class="gallery-inner-price">7.654 р</p>
-                        </div>
-                      <div class="owl-item">
-                        <img src="img/karta-tovara/inner-carousel/slide-a.png" class="gallery-image" alt="Фото">
-                        <p class="gallery-inner-title">Балаклава флисовая милитари</p>
-                        <p class="gallery-inner-price">7.654 р</p>
-                        </div>
-                      <div class="owl-item">
-                        <img src="img/karta-tovara/inner-carousel/slide-a.png" class="gallery-image" alt="Фото">
-                        <p class="gallery-inner-title">Балаклава флисовая милитари</p>
-                        <p class="gallery-inner-price">7.654 р</p>
-                        </div>
-                      <div class="owl-item">
-                        <img src="img/karta-tovara/inner-carousel/slide-a.png" class="gallery-image" alt="Фото">
-                        <p class="gallery-inner-title">Балаклава флисовая милитари</p>
-                        <p class="gallery-inner-price">7.654 р</p>
-                        </div>
-                      <div class="owl-item">
-                        <img src="img/karta-tovara/inner-carousel/slide-a.png" class="gallery-image" alt="Фото">
-                        <p class="gallery-inner-title">Балаклава флисовая милитари</p>
-                        <p class="gallery-inner-price">7.654 р</p>
-                        </div>
-                      <div class="owl-item">
-                        <img src="img/karta-tovara/inner-carousel/slide-a.png" class="gallery-image" alt="Фото">
-                        <p class="gallery-inner-title">Балаклава флисовая милитари</p>
-                        <p class="gallery-inner-price">7.654 р</p>
-                        </div>
-                      <div class="owl-item">
-                        <img src="img/karta-tovara/inner-carousel/slide-a.png" class="gallery-image" alt="Фото">
-                        <p class="gallery-inner-title">Балаклава флисовая милитари</p>
-                        <p class="gallery-inner-price">7.654 р</p>
-                        </div>
-                      <div class="owl-item">
-                        <img src="img/karta-tovara/inner-carousel/slide-a.png" class="gallery-image" alt="Фото">
-                        <p class="gallery-inner-title">Балаклава флисовая милитари</p>
-                        <p class="gallery-inner-price">7.654 р</p>
-                        </div>
-                      <div class="owl-item">
-                        <img src="img/karta-tovara/inner-carousel/slide-a.png" class="gallery-image" alt="Фото">
-                        <p class="gallery-inner-title">Балаклава флисовая милитари</p>
-                        <p class="gallery-inner-price">7.654 р</p>
-                        </div>
+                    </li>
+                    <li>
+                      <div class="catalog-inner-nav-skin">
+                        <a href="#"><div class="left-side"></div><div class="middle">Складные велосипеды</div><div class="right-side"></div></a>
                       </div>
+                    </li>
+                    <li>
+                      <div class="catalog-inner-nav-skin">
+                        <a href="#"><div class="left-side"></div><div class="middle">Шоссейные велосипеды</div><div class="right-side"></div></a>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="catalog-inner-nav-skin">
+                        <a href="#"><div class="left-side"></div><div class="middle">Двухподвесы</div><div class="right-side"></div></a>
+                      </div>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                      <div class="catalog-inner-nav-skin">
+                        <a href="#"><div class="left-side"></div><div class="middle">Найнеры</div><div class="right-side"></div></a>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="catalog-inner-nav-skin">
+                        <a href="#"><div class="left-side"></div><div class="middle">Велосипеды BMX</div><div class="right-side"></div></a>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="catalog-inner-nav-skin">
+                        <a href="#"><div class="left-side"></div><div class="middle">Гибридные велосипеды</div><div class="right-side"></div></a>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="catalog-inner-nav-skin">
+                        <a href="#"><div class="left-side"></div><div class="middle">Экстремальные велосипеды</div><div class="right-side"></div></a>
+                      </div>
+                    </li>
+                </ul>
+                <ul>
+                  <li>
+                    <div class="catalog-inner-nav-skin">
+                      <a href="#"><div class="left-side"></div><div class="middle">Велосипедные бренды</div></a>
                     </div>
-                    </div>
+                  </li>
+                </ul>
+                </div>
             </div>
-          </div>
         </div>
+  </div>
+  </div>
+  </div>
+  </div>
   </div>
   </div>
   <footer class="footer">
@@ -505,10 +350,8 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
-    <script src="js/owl.carousel.min.js"></script>
-    <script src="js/main.js"></script>
 
-      <script type="text/javascript">
+    <script type="text/javascript">
       $(document).ready(function(){
       $('.catalog-page__filter-subtitle').click(function(){
       $(this).parent().children('.filter-subtitle__spoiler-body').slideToggle(500);
@@ -541,6 +384,5 @@
           if (countPress == colors.length) { countPress = 0;}
       }
       </script>
-
   </body>
 </html>

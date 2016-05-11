@@ -2642,7 +2642,6 @@ footer .title-link{ font-weight: bold;}
     box-shadow: 0 9px 3px -2px #eaeaea;
     border: 1px solid  #6dcff6;
     background-color: #fff;
-    height: 50px;
 }
 
 .catalog-page__control{
@@ -2769,20 +2768,15 @@ footer .title-link{ font-weight: bold;}
 }
 
 .catalog-page__content-catalog-pagination{
-    text-align: left;
-    margin-left: 14px;
     display: inline-block;
     vertical-align: middle;
-    width: 48%;
 }
 
 
 .catalog-page__content-catalog-result{
-    text-align: right;
-    margin-right: 14px;
     display: inline-block;
     vertical-align: middle;
-    width: 48%;
+    margin-left: 100px;
 }
 
 .catalog-page__content-carousel{
@@ -3021,12 +3015,94 @@ footer .title-link{ font-weight: bold;}
 }
 
 
+/* Пагинация и кол-во страниц на каталоге */
 
+.catalog-page__content-catalog-pagination > ul > li{
+    display: inline-block;
+}
 
+.catalog-page__content-catalog-pagination > ul > li > a{
+    border: 1px solid  #6dcff6;
+    padding: 5px 10px;
+    display: block;
+    color: #6dcff6;
+    text-decoration: none;
+}
 
+.catalog-page__content-catalog-pagination .fa-angle-right, .catalog-page__content-catalog-pagination .fa-angle-double-right {
+    padding: 8px 13px;
+}
 
+.catalog-page__content-catalog-result > p{
+    font-size: 14px;
+    color: #000;
+}
 
+/* правила блока внутреннего блока навигации в Каталоге */
 
+.left-side{
+  display: inline-block;
+  border-left: 20px solid transparent;
+  border-top: 20px solid #6dcff6;
+  vertical-align: top;
+}
+
+.right-side{
+  display: inline-block;
+  border-right: 20px solid transparent;
+  border-bottom: 20px solid #6dcff6;
+  vertical-align: top;
+}
+
+.middle{
+  display: inline-block;
+  background-color: #6dcff6;
+  line-height: 20px;
+  font-size: 12px;
+  vertical-align: top;
+  color: white;
+  width: 83%;
+  text-align: center;
+}
+.catalog-page__content-title{
+    padding: 9px;
+}
+
+.catalog-inner-nav-skin{
+    margin-bottom: 5px;
+    margin-right: 5px;
+}
+
+.catalog-inner-nav-skin:hover .middle{
+    background-color: #40a7d0;
+}
+
+.catalog-inner-nav-skin:hover .right-side{
+    border-right: 20px solid transparent;
+    border-bottom: 20px solid #40a7d0;
+}
+
+.catalog-inner-nav-skin:hover .left-side{
+    border-left: 20px solid transparent;
+    border-top: 20px solid #40a7d0;
+}
+
+.catalog-page__content > .catalog-page__content-title > ul{
+    list-style: none;
+    padding-left: 0;
+    display: inline-block;
+    vertical-align: top;
+    width: 241px;
+    margin-bottom: 0;
+}
+
+.catalog-page__content > .catalog-page__content-title > ul:first-child{ width: 198px;}
+.catalog-page__content > .catalog-page__content-title > ul:nth-child(2){ width: 241px; margin-left: -20px;}
+.catalog-page__content > .catalog-page__content-title > ul:nth-child(3){ width: 241px; margin-left: -55px;}
+.catalog-page__content > .catalog-page__content-title > ul:nth-child(4){ width: 200px; margin-left: -35px;}
+
+.catalog-page__content > .catalog-page__content-title > ul:nth-child(2) > li > .catalog-inner-nav-skin > a > .middle{width: 61%;}
+.catalog-page__content > .catalog-page__content-title > ul:nth-child(3) > li > .catalog-inner-nav-skin > a > .middle{width: 71%;}
 
 
 
