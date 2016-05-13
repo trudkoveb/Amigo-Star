@@ -1678,11 +1678,38 @@ footer .title-link{ font-weight: bold;}
 
 .icon-product-card-stock{
     background-image: url(../img/icon-product-card-stock.png);
-    width: 138px;
-    height: 85px;
+    width: 127px;
+    height: 26px;
     position: absolute;
-    right: -27px;
+    right: -1px;
     top: -1px;
+}
+
+.icon-product-card-stock-b{
+    background-image: url(../img/icon-product-card-stock-b.png);
+    width: 127px;
+    height: 26px;
+    position: absolute;
+    right: -1px;
+    top: 30px;
+}
+
+.icon-product-card-stock-c{
+    background-image: url(../img/icon-product-card-stock-c.png);
+    width: 127px;
+    height: 26px;
+    position: absolute;
+    right: -1px;
+    top: 60px;
+}
+
+.icon-product-card-stock-d{
+    background-image: url(../img/icon-product-card-stock-d.png);
+    width: 127px;
+    height: 26px;
+    position: absolute;
+    right: -1px;
+    top: 90px;
 }
 
 .product-card-price-block__price{
@@ -2712,6 +2739,51 @@ footer .title-link{ font-weight: bold;}
     display: inline-block;
     padding: 10px;
     margin-bottom: 30px;
+    position: relative;
+}
+
+.icon-catalog-new:before{
+    content: "";
+    display: block;
+    width: 83px;
+    height: 20px;
+    background-image: url(../img/icon-catalog-product-a.png);
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.icon-catalog-season:before{
+    content: "";
+    display: block;
+    width: 83px;
+    height: 20px;
+    background-image: url(../img/icon-catalog-product-d.png);
+    position: absolute;
+    top: 25px;
+    right: 0;
+}
+
+.icon-catalog-hits:before{
+    content: "";
+    display: block;
+    width: 50px;
+    height: 20px;
+    background-image: url(../img/icon-catalog-product-c.png);
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.icon-catalog-stock:before{
+    content: "";
+    display: block;
+    width: 50px;
+    height: 20px;
+    background-image: url(../img/icon-catalog-product-b.png);
+    position: absolute;
+    top: 0;
+    right: 0;
 }
 
 .catalog-page__content-catalog-product:nth-child(3n+1){ margin-left: 14px;}
