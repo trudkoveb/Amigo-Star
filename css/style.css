@@ -1817,6 +1817,7 @@ footer .title-link{ font-weight: bold;}
 
 .product-card-price-block__color{
     text-align: center;
+    position: relative;
 }
 
 .product-card-price-block__color > span{
@@ -1837,7 +1838,20 @@ footer .title-link{ font-weight: bold;}
     text-transform: uppercase;
     padding-top: 8px;
     padding-bottom: 8px;
+    padding-right: 5px;
     margin-top: 22px;
+    -webkit-appearance: none;
+    background-image: url(../img/icon-select-form-fast-order.png);
+    background-position: 90%;
+    background-repeat: no-repeat;
+    line-height: 1em;
+    /* for FF */
+    -moz-appearance: none;
+    text-indent: 0.01px;
+    text-overflow: '';
+    /* for IE */
+    -ms-appearance: none;
+    appearance: none!important;
 }
 
 .product-card-price-block__order{
